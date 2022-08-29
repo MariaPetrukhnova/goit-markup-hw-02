@@ -18,6 +18,7 @@ body {
 
 .link {
     text-decoration: none;
+    color: inherit;
 }
 
 .logo span{
@@ -74,6 +75,10 @@ body {
     cursor: pointer;
 }
 
+.hero-btn:hover {
+    background-color: #188CE8;
+}
+
 .hidden-title{
     visibility: hidden;
 }
@@ -101,12 +106,15 @@ body {
     letter-spacing: 0.03em;
 }
 
+.team {
+    background-color: var(--secondary-bcg);
+}
+
 .team-title {
     color: var(--title-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    /*text-align: center;*/
     letter-spacing: 0.03em;
 }
 
