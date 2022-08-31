@@ -12,8 +12,10 @@ body {
     background-color: #ffffff;
 }
 
-.list {
+h1, h2, h3, h4, h5, h6, p, ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .link {
@@ -25,26 +27,35 @@ body {
     color: #000000;
 }
 
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .logo {
     color: var(--accent-color);
     text-decoration: none;
     font-family: Raleway, sans-serif;
+    font-size: 26px;
     font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
-.site-nav .link{
+.nav-item {
     color: var(--title-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.link:hover, .link:focus, .link.active {
+
+.nav-item .link:hover, .link:focus, .link.active,
+.cont-item .link:hover, .link:focus, .link.active {
     color: var(--accent-color);
 }
 
 .contacts {
-    color: var(--title-color);
+    color: var(--main-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -70,9 +81,10 @@ body {
     color: var(--white-color);
     font-weight: 700;
     line-height: 1.88;
-    text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .hero-btn:hover {
@@ -118,9 +130,8 @@ body {
     letter-spacing: 0.03em;
 }
 
-.text-title {
+.team-text {
     line-height: 1.19;
-    text-align: center;
     letter-spacing: 0.03em;
 }
 
@@ -140,6 +151,7 @@ body {
     color: var(--white-color);
     text-decoration: none;
 }
+
 .contact-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
@@ -148,18 +160,21 @@ body {
 .filter-btn {
     color: var(--title-color);
     background-color: var(--secondary-bcg);
+    font-family: inherit;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.03em;
     border: none;
+    border-radius: 4px;
 }
 
 .filter-btn:hover, .filter-btn:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .portfolio-title {
