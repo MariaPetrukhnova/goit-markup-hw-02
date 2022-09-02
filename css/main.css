@@ -4,19 +4,26 @@
     --accent-color: #2196F3;
     --white-color: #ffffff;
     --secondary-bcg: #F5F4FA;
+    --black-color: #000000;
+    --footer-bcg: #2F303A;
+    --btn-hover: #188CE8;
+    --header-line: #ECECEC;
+    --footer-contact: rgba(255, 255, 255, 0.6);
 }
 
 body {
     font-family: Roboto, Montserrat, DM Sans, sans-serif;
     color: var(--main-color);
-    background-color: #ffffff;
+    background-color: var(--white-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {
+/*h1, h2, h3, h4, h5, h6, p, ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
+}*/
 
 .link {
     text-decoration: none;
@@ -24,11 +31,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .page-header span{
-    color: #000000;
+    color: var(--black-color);
 }
 
 .page-header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--header-line);
 }
 
 .logo {
@@ -38,13 +45,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 .nav-item {
     color: var(--title-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -57,13 +62,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .contacts {
     color: var(--main-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
 .hero {
-    background: #2F303A;
+    background: var(--footer-bcg);
 }
 
 .hero-title {
@@ -79,6 +83,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .hero-btn {
     background-color: var(--accent-color);
     color: var(--white-color);
+    font-family: inherit;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
@@ -88,7 +94,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .hero-btn:hover {
-    background-color: #188CE8;
+    background-color: var(--btn-hover);
 }
 
 .hidden-title{
@@ -99,14 +105,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: var(--title-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
     text-transform: uppercase;
 }
 .features-text {
-    font-size: 14px;
     line-height: 1.71; 
-    letter-spacing: 0.03em;
 }
 
 .section-title {
@@ -127,25 +130,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 .team-text {
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 .page-footer {
-    background-color: #2F303A;
+    background-color: var(--footer-bcg);
 }
 .page-footer span {
     color: var(--white-color);
 }
 .adr {
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 .adr-link {
     color: var(--white-color);
@@ -153,7 +152,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .contact-link {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-contact);
     text-decoration: none;
 }
 
@@ -161,6 +160,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: var(--title-color);
     background-color: var(--secondary-bcg);
     font-family: inherit;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
@@ -187,6 +187,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .portfolio-text {
     color: var(--main-color);
+    font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
 }
